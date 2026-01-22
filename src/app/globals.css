@@ -1,26 +1,57 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-source-sans),
+    ui-sans-serif,
+    system-ui,
+    sans-serif;
+  --color-blue: var(--bBlue);
+  --color-blue-dark: var(--dGBlue);
+  --color-blue-light: var(--lGBlue);
+  --color-accent: var(--bBlueAccent);
+  --color-orange: var(--bOrange);
+  --color-gray: var(--bGray);
+  --color-black: var(--bBlack);
+  --color-white: var(--bWhite);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+:root {
+  --bBlue: #2727B5;
+  --dGBlue:#000043;
+  --lGBlue:#0000A9;
+  --bBlueAccent: #DADAFF;
+  --bOrange: #F7A31A;
+  --bGray: #F1F1F1;
+  --bBlack: #000000;
+  --bWhite: #FFFFFF;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.dark {
+  --bBlue: #929395;
+  --dGBlue:#B9C5D9;
+  --lGBlue:#97A1B2;
+  --bBlueAccent: #444445;
+  --bOrange: #121212;
+  --bGray: #010101;
+  --bBlack: #FFFFFF;
+  --bWhite: #000000;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background: var(--bGray);
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  body {
+    background: var(--bGray);
+    color: var(--bBlack);
+    font-family: var(--font-sans);
+  }
 }
