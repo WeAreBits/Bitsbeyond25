@@ -12,7 +12,7 @@ function layout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <>{children}</>
       <Footer />
     </>
   );
