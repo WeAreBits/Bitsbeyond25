@@ -61,3 +61,6 @@
 .contPadd{
   @apply px-4 md:px-8 lg:px-16;
 }
+.bodyH2{
+  @apply font-semibold font-sans capitalize text-black dark:text-black text-4xl;
+}

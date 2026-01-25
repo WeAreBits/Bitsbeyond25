@@ -17,7 +17,7 @@ function NavDrop() {
         <span>Who We Are</span>
         <FaCaretDown />
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="ml-10 mt-6 border-none bg-white dark:bg-white rounded-t-none rounded-b font-sans text-base font-semibold capitalize">
+      <DropdownMenuContent className="ml-10 mt-5 border-none bg-white dark:bg-white rounded-t-none rounded-b font-sans text-base font-semibold capitalize">
         <DropdownMenuItem>
           <Link href="/about-bits">About Bits</Link>
         </DropdownMenuItem>
