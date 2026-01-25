@@ -7,6 +7,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { FaCaretDown } from "react-icons/fa";
+import Link from 'next/link';
 
 
 function NavDrop() {
@@ -16,9 +17,13 @@ function NavDrop() {
         <span>Who We Are</span>
         <FaCaretDown />
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="ml-10 mt-5 border-none rounded-t-none font-sans text-base font-semibold capitalize">
-        <DropdownMenuItem>About Bits</DropdownMenuItem>
-        <DropdownMenuItem>Bits Team</DropdownMenuItem>
+      <DropdownMenuContent className="ml-10 mt-6 border-none bg-white dark:bg-white rounded-t-none rounded-b font-sans text-base font-semibold capitalize">
+        <DropdownMenuItem>
+          <Link href="/about-bits">About Bits</Link>
+        </DropdownMenuItem>
+        <DropdownMenuItem>
+          <Link href="/bits-team">Bits Team</Link>
+        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );

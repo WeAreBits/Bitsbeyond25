@@ -55,3 +55,9 @@
     font-family: var(--font-sans);
   }
 }
+.myCont{
+  @apply container mx-auto max-lg:max-w-[94%];
+}
+.contPadd{
+  @apply px-4 md:px-8 lg:px-16;
+}

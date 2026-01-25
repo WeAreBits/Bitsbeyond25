@@ -21,17 +21,17 @@ export function ModeToggle() {
         <Link
           href=""
           role="button"
-          className="flex items-center justify-between gap-3 text-blue px-2"
+          className="flex items-center justify-between md:gap-3 text-blue px-2"
         >
           <div className="scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90 flex gap-3 items-center justify-start">
-            <Sun className="h-5 w-5 text-blue dark:text-[#F7A31A]" />
-            <span className="text-black hover:text-blue font-sans font-semibold text-sm hover:dark:text-[#F7A31A]">
+            <Sun className="w-6 h-6 md:w-5 md:h-5 text-blue dark:text-[#F7A31A]" />
+            <span className="hidden md:inline-block text-black hover:text-blue font-sans font-semibold text-sm hover:dark:text-[#F7A31A]">
               Light Mode
             </span>
           </div>
           <div className="absolute scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0 flex gap-3 items-center justify-start">
-            <Moon className="w-5 h-5 text-blue dark:text-[#F7A31A]" />
-            <span className="text-black hover:text-blue font-sans font-semibold text-sm hover:dark:text-[#F7A31A]">
+            <Moon className="w-6 h-6 md:w-5 md:h-5 text-blue dark:text-[#F7A31A]" />
+            <span className="hidden md:inline-block text-black hover:text-blue font-sans font-semibold text-sm hover:dark:text-[#F7A31A]">
               Dark Mode
             </span>
           </div>

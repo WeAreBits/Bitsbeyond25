@@ -22,8 +22,8 @@ function LanguageSwitcher() {
           aria-label="Toggle language menu"
         >
           <div className="flex items-center gap-3 cursor-pointer">
-            <HiMiniLanguage className="inline-block h-5 w-5 text-blue dark:text-[#F7A31A]" />
-            <span className="font-sans text-sm font-semibold text-black hover:text-blue hover:dark:text-[#F7A31A]">
+            <HiMiniLanguage className="inline-block h-6 w-6 md:h-5 font-bold md:w-5 text-blue dark:text-[#F7A31A]" />
+            <span className="hidden md:block font-sans text-sm font-semibold text-black hover:text-blue hover:dark:text-[#F7A31A]">
               Choose Language
             </span>
           </div>

@@ -15,11 +15,11 @@ import CTAButtons from './CTAButtons';
 function MobileNav() {
   return (
 <Drawer direction='right'>
-  <DrawerTrigger className='ml-3 block lg:hidden'><IoMenu className='w-[35px] h-[35px] cursor-pointer'/></DrawerTrigger>
+  <DrawerTrigger className='ml-3 block lg:hidden'><IoMenu className='w-9 h-9 cursor-pointer'/></DrawerTrigger>
   <DrawerContent className='bg-white max-sm:min-w-full border-none'>
     <DrawerHeader className='grid grid-cols-6 items-center bg-blue shadow'>
       <DrawerClose asChild>
-        <IoClose className='w-[35px] h-[35px] cursor-pointer text-white'/>
+        <IoClose className='w-9 h-9 cursor-pointer text-white'/>
       </DrawerClose> 
       <div className='col-span-5'>
         <CTAButtons/>

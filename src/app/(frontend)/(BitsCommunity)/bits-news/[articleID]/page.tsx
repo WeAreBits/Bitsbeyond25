@@ -2,7 +2,7 @@ import React from 'react'
 
 function page() {
   return (
-    <div>Careers</div>
+    <div>A News Article</div>
   )
 }
 

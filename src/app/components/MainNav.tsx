@@ -5,7 +5,7 @@ import NavDrop from "./NavDrop";
 import CTAButtons from "./CTAButtons";
 function MainNav() {
   return (
-    <div className="container mx-auto hidden lg:block">
+    <div className="container  mx-auto hidden lg:block">
       <nav className="ml-[126px] min-h-[70px] flex items-center">
         <ul className="flex grow justify-start items-center gap-5 font-sans font-bold text-sm text-white dark:text-white [&_li]:hover:text-orange">
           <li>
@@ -21,7 +21,7 @@ function MainNav() {
             <NavDrop />
           </li>
         </ul>
-      <CTAButtons/>
+        <CTAButtons />
       </nav>
     </div>
   );
