@@ -61,7 +61,7 @@ function ScrollCarouselComponent() {
       {partners.map((partner) => (
         <figure
           key={partner.id}
-          className="w-[149px] h-[107px] rounded border-2 border-grey"
+          className="w-[149px] h-[107px] rounded ring-2 ring-gray"
         >
           <Image
             src={`/images/${partner.shortname}.svg`}
