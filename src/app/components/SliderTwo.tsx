@@ -79,9 +79,6 @@ function SliderTwo() {
             }}
           >
             <div className="order-2 lg:order-1 space-y-5">
-              {/* <span className="inline-block px-6 py-2 mb-10 text-center bg-blue dark:bg-blue text-white dark:text-white font-sans font-xs rounded-full">
-                    {slide.slogan}
-                  </span> */}
               <h1 className="text-4xl/tight font-semibold font-sans text-black dark:text-black">
                 {slide.title}
               </h1>

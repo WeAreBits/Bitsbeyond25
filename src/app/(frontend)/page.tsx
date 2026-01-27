@@ -12,7 +12,7 @@ export default function Home() {
       <main className="myCont">
         <HomePartners/>
         <Impact/>
-        <TestimonalsSlider/>
+        {/* <TestimonalsSlider/> */}
         <FeaturedNews/>
       </main>
     </>

@@ -9,8 +9,8 @@ import TopContacts from './TopContacts';
 
 function Header() {
   return (
-    <header className="sticky max-lg:bg-white bg-gray dark:bg-gray top-0 w-full z-50">
-      <div className="myCont max-lg:h-[70px] mx-auto bg-white dark:bg-white lg:min-h-[50px] pl-[60px] lg:pl-32 py-[13px] sm:pr-6 relative flex justify-end gap-8">
+    <header className="sticky max-sm:pr-4 max-lg:bg-white bg-gray dark:bg-gray top-0 w-full z-50">
+      <div className="myCont max-lg:h-[70px] bg-white dark:bg-white lg:min-h-[50px] pl-[60px] lg:pl-32 py-[13px] sm:pr-6 relative flex justify-end gap-8">
         <div className="absolute w-[70px] h-[80px] p-3 md:w-[90px] md:h-[100px] bg-[#ffffff] rounded-br-[8px] top-0 left-0 md:px-2.5 md:py-1.5">
           <Image
             src="/images/highreslogo.png"

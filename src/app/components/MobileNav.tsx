@@ -16,7 +16,7 @@ function MobileNav() {
   return (
 <Drawer direction='right'>
   <DrawerTrigger className='ml-3 block lg:hidden'><IoMenu className='w-9 h-9 cursor-pointer'/></DrawerTrigger>
-  <DrawerContent className='bg-white max-sm:min-w-full border-none'>
+  <DrawerContent className='bg-white max-sm:min-w-full border-none m-0'>
     <DrawerHeader className='grid grid-cols-6 items-center bg-blue shadow'>
       <DrawerClose asChild>
         <IoClose className='w-9 h-9 cursor-pointer text-white'/>
