@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 function PagesHero() {
   return (
-    <article className="bg-[url(/images/newsbg.png)] bg-no-repeat bg-cover bg-center">
+    <article className="bg-[url(/images/newsbg.png)] bg-no-repeat bg-cover bg-top">
       <section className="bg-blue/75">
         <header className="myCont">
           <nav className="contPadd py-11 flex flex-col items-start [&_h1]:text-white [&_h1]:font-semibold [&_h1]:font-sans [&_h1]:text-4xl capitalize">

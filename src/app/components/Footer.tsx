@@ -4,7 +4,7 @@ import Link from 'next/link';
 function Footer() {
   const year = new Date();
   return (
-    <footer className="bg-[url(/images/newsbg.png)] bg-no-repeat bg-top">
+    <footer className="bg-[url(/images/newsbg.png)] bg-no-repeat bg-top bg-cover">
       <section className="bg-blue/75 dark:bg-blue/75 py-11">
         <div className="myCont">
           <div className="text-center contPadd">

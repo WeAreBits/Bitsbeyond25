@@ -100,7 +100,7 @@ function SliderTwo() {
                 alt={slide.title}
                 fill
                 priority
-                className="object-fit dark:grayscale-100"
+                className="object-cover dark:grayscale-100"
               />
             </figure>
           </CarouselItem>
