@@ -77,7 +77,7 @@ function Slider() {
                 </div>
 
                 {/* Right Side: Image */}
-                <figure className="order-1 lg:order-2 relative aspect-square lg:aspect-auto h-[260px] lg:h-[460px]">
+                <figure className="order-1 lg:order-2 relative h-[260px] lg:h-[460px]">
                   <Image
                     src={slide.image}
                     alt={slide.title}

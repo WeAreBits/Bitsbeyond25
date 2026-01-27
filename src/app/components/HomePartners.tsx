@@ -4,12 +4,12 @@ import dynamic from "next/dynamic";
 
 const ScrollCarousel = dynamic(
   () => import("./ScrollCarouselComponent"),
-  { ssr: false },
+  { ssr: true },
 );
 
 function HomePartners() {
   return (
-    <section className="bg-white dark:bg-white contPadd py-11">
+    <section className="bg-white dark:bg-white contPadd py-10 h-[190px]">
       <ScrollCarousel/>
     </section>
   );

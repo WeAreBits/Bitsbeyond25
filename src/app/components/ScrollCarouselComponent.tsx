@@ -1,4 +1,3 @@
-'use client'
 import React from 'react'
 import ScrollCarousel from "scroll-carousel-react";
 import Image from 'next/image';
@@ -61,14 +60,15 @@ function ScrollCarouselComponent() {
       {partners.map((partner) => (
         <figure
           key={partner.id}
-          className="w-[149px] h-[107px] rounded ring-2 ring-gray"
+          className="w-[150px] h-[110px]"
         >
           <Image
             src={`/images/${partner.shortname}.svg`}
             alt={partner.name}
-            fill
+            width={149}
+            height={107}
             priority
-            className="dark:grayscale-100 inline-block"
+            className="dark:grayscale-100 inline-block rounded border-2 border-gray"
           />
         </figure>
       ))}
