@@ -6,18 +6,30 @@ import CTAButtons from "./CTAButtons";
 function MainNav() {
   return (
     <div className="container  mx-auto hidden lg:block">
-      <nav className="ml-[126px] min-h-[70px] flex items-center">
-        <ul className="flex grow justify-start items-center gap-5 font-sans font-bold text-sm text-white dark:text-white [&_li]:hover:text-orange">
-          <li>
+      <nav className="ml-[126px] flex items-center">
+        <ul className="flex grow min-h-[70px] justify-start items-stretch gap-5 font-sans font-bold text-sm text-white dark:text-white [&_li]:hover:text-orange">
+          <li className="flex items-center">
             <Link href="/" title="Home Link">
               Home
             </Link>
           </li>
-          <li>
+          <li className="flex items-center">
             <NavDrop />
           </li>
 
-          <li>
+          <li className="flex items-center">
+            <NavDrop />
+          </li>
+
+          <li className="flex items-center">
+            <NavDrop />
+          </li>
+
+          <li className="flex items-center">
+            <NavDrop />
+          </li>
+
+          <li className="flex items-center">
             <NavDrop />
           </li>
         </ul>
