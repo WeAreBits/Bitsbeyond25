@@ -6,8 +6,9 @@ import LanguageSwitcher from './LanguageSwitcher';
 import MainNav from './MainNav';
 import MobileNav from './MobileNav';
 import TopContacts from './TopContacts';
+import { HeaderProps } from '@/types';
 
-function Header() {
+function Header({ navs }: HeaderProps) {
   return (
     <header className="sticky max-sm:pr-4 max-lg:bg-white bg-gray dark:bg-gray top-0 w-full z-50">
       <div className="myCont max-lg:h-[70px] bg-white dark:bg-white lg:min-h-[50px] pl-[60px] lg:pl-32 py-[13px] sm:pr-6 relative flex justify-end gap-8">
@@ -32,7 +33,7 @@ function Header() {
         </div>
       </div>
       <div className="bg-blue dark:bg-blue">
-        <MainNav />
+        <MainNav navs={navs}/>
       </div>
     </header>
   );

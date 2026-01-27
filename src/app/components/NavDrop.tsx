@@ -8,9 +8,13 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { FaCaretDown } from "react-icons/fa";
 import Link from 'next/link';
+import type { NavItem } from "@/types";
 
+type NavDropProps = {
+  nav: NavItem;
+};
 
-function NavDrop() {
+function NavDrop({ nav }: NavDropProps) {
   const [open, setOpen] = React.useState(false);
 
   return (
@@ -19,7 +23,7 @@ function NavDrop() {
         className="flex gap-1 items-center cursor-pointer"
         onMouseEnter={() => setOpen(true)}
       >
-        <span>Who We Are</span>
+        <span>{nav.label ?? "Menu"}</span>
         <FaCaretDown
           className={`transition-transform duration-200 ease-out ${
             open ? "rotate-180" : "rotate-0"
@@ -31,12 +35,15 @@ function NavDrop() {
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}
       >
-        <DropdownMenuItem asChild className="cursor-pointer">
-          <Link href="/about-bits">About Bits</Link>
-        </DropdownMenuItem>
-        <DropdownMenuItem asChild className="cursor-pointer">
-          <Link href="/bits-team">Bits Team</Link>
-        </DropdownMenuItem>
+        {nav.children?.map((child) => (
+          <DropdownMenuItem
+            key={child.id}
+            asChild
+            className="cursor-pointer"
+          >
+            <Link href={child.uri || "/"}>{child.label ?? "Untitled"}</Link>
+          </DropdownMenuItem>
+        ))}
       </DropdownMenuContent>
     </DropdownMenu>
   );

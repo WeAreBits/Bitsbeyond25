@@ -73,12 +73,12 @@ function SliderTwo() {
         {slides.map((slide, i) => (
           <CarouselItem
             key={i}
-            className="w-full grid h-full grid-cols-1 items-center gap-8 lg:grid-cols-2 transition-opacity duration-700 ease-in-out"
+            className="w-full grid h-full grid-cols-1 items-center gap-8 md:grid-cols-2 transition-opacity duration-700 ease-in-out"
             style={{
               opacity: current === i ? 1 : 0,
             }}
           >
-            <div className="order-2 lg:order-1 space-y-5">
+            <div className="order-2 md:order-1 space-y-5">
               <h1 className="text-4xl/tight font-semibold font-sans text-black dark:text-black">
                 {slide.title}
               </h1>
@@ -91,13 +91,13 @@ function SliderTwo() {
                 </button>
               </div>
             </div>
-            <figure className="order-1 lg:order-2 relative h-[260px] lg:h-[460px]">
+            <figure className="order-1 md:order-2 relative h-[260px] md:h-[460px]">
               <Image
                 src={slide.image}
                 alt={slide.title}
                 fill
                 priority
-                className="object-cover dark:grayscale-100"
+                className="object-fit dark:grayscale-100"
               />
             </figure>
           </CarouselItem>
