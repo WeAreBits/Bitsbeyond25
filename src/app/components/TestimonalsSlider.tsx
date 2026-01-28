@@ -45,8 +45,8 @@ function TestimonalsSlider() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="bg-accent hover:bg-blue text-blue hover:text-white invisible sm:visible" />
-        <CarouselNext className="bg-accent text-blue hover:bg-blue hover:text-white invisible sm:visible" />
+        <CarouselPrevious className="bg-accent hover:bg-blue text-blue hover:text-white invisible sm:visible sm:ml-8 md:ml-5" />
+        <CarouselNext className="bg-accent text-blue hover:bg-blue hover:text-white invisible sm:visible sm:mr-8 md:mr-5" />
       </Carousel>
     </section>
   );

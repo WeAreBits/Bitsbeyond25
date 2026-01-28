@@ -35,7 +35,7 @@ async function layout({ children }: Readonly<{ children: React.ReactNode }>) {
   const data = await res.json();
   const topNav = data?.data?.topMenu?.nodes;
 
-  console.log(topNav)
+  // console.log(topNav)
 
   const mainMenu = flatListToHierarchical(topNav);
   return (

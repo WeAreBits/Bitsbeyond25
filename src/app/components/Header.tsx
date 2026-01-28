@@ -29,7 +29,7 @@ function Header({ navs }: HeaderProps) {
             <LanguageSwitcher />
             <ModeToggle />
           </div>
-          <MobileNav />
+          <MobileNav navs={navs}/>
         </div>
       </div>
       <div className="bg-blue dark:bg-blue">
