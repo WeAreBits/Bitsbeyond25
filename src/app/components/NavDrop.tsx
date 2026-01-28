@@ -31,7 +31,7 @@ function NavDrop({ nav }: NavDropProps) {
         />
       </DropdownMenuTrigger>
       <DropdownMenuContent
-        className="ml-10 mt-5 border-none bg-white dark:bg-white rounded-t-none rounded-b font-sans text-base font-semibold capitalize transition-all duration-200 ease-out data-[state=closed]:opacity-0 data-[state=open]:opacity-100 data-[state=closed]:translate-y-1 data-[state=open]:translate-y-0"
+        className="ml-10 mt-[21px] border-none bg-white dark:bg-white rounded-t-none rounded-b font-sans text-base font-semibold capitalize transition-all duration-200 ease-out data-[state=closed]:opacity-0 data-[state=open]:opacity-100 data-[state=closed]:translate-y-1 data-[state=open]:translate-y-0"
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}
       >

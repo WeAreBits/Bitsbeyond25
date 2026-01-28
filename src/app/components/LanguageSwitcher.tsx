@@ -31,7 +31,7 @@ function LanguageSwitcher() {
       </DropdownMenuTrigger>
       <DropdownMenuContent
         align="end"
-        className="mt-2 border-0 bg-white font-sans rounded-t-none font-semibold text-black shadow-none"
+        className="mt-2 border-0 bg-white font-sans rounded-t-none rounded-b-[4px] font-semibold text-black shadow-none"
       >
         {LANGUAGES.map(({ code, href, label }) => (
           <DropdownMenuItem key={code} asChild>

@@ -11,9 +11,9 @@ function FeaturedNews() {
           <Link
             key={index}
             href="/"
-            className={`block ${index === 0 ? 'md:row-span-3' : ''} [&_a]:hidden`}
+            className={`block ${index === 0 ? 'md:row-span-3' : ''}`}
           >
-            <PostCard horizontal={index !== 0} />
+            <PostCard horizontal={index !== 0} showReadMoreLink={false} />
           </Link>
         ))}
       </div>

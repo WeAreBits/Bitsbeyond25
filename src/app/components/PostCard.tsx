@@ -5,9 +5,10 @@ import Link from 'next/link';
 
 interface PostCardProps {
   horizontal?: boolean;
+  showReadMoreLink?: boolean;
 }
 
-function PostCard({ horizontal = false }: PostCardProps) {
+function PostCard({ horizontal = false, showReadMoreLink = true }: PostCardProps) {
   return (
     <Card
       className={`bg-transparent border-0 p-0 shadow-none ${horizontal ? "md:grid md:grid-cols-3 md:gap-5" : ""}`}
@@ -29,7 +30,7 @@ function PostCard({ horizontal = false }: PostCardProps) {
           Teachers Computer Science Program & iKids Computer Science Program
           Graduation
         </h3>
-        <div className="font-sans text-base text-black dark:text-black">
+        <div className="font-sans text-base text-black dark:text-black line-clamp-3 my-2">
           <p>
             Adipiscing elit ed tincidunt lectus iaculis orci faucibus tristique.
             Pellentesque ornare tortor viverra nisi vulputat imperdiet.
@@ -37,16 +38,18 @@ function PostCard({ horizontal = false }: PostCardProps) {
           </p>
         </div>
         <div className="flex justify-between items-center gap-5">
-          <h4 className="font-sans text-lg font-semibold text-blue dark:text-blue">
+          <h4 className="font-sans text-base font-semibold text-[#444445] dark:text-blue">
             30th June 2025
           </h4>
-          <Link
-            href="/"
-            title="Read More Link"
-            className="font-sans text-lg font-semibold text-blue dark:text-blue hover:text-black"
-          >
-            Read more
-          </Link>
+          {showReadMoreLink && (
+            <Link
+              href="/"
+              title="Read More Link"
+              className="font-sans text-base font-semibold text-blue dark:text-blue hover:text-black dark:hover:text-[#F7A31A]"
+            >
+              Read More
+            </Link>
+          )}
         </div>
       </CardContent>
     </Card>

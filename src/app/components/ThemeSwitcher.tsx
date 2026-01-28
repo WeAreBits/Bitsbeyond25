@@ -38,7 +38,7 @@ export function ModeToggle() {
           <span className="sr-only">Toggle theme</span>
         </Link>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="border-0 font-sans font-semibold text-black hover:text-blue md:right-0 shadow-none mt-2 rounded-t-none bg-white">
+      <DropdownMenuContent className="border-0 font-sans font-semibold text-black hover:text-blue md:right-0 shadow-none mt-2 rounded-t-none rounded-b-[4px] bg-white">
         <DropdownMenuItem onClick={() => setTheme("system")}>
           System
         </DropdownMenuItem>
