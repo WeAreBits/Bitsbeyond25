@@ -109,7 +109,7 @@ function page() {
             />
           </figure>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="[&_h3]:text-blue [&_h3]:text-lg [&_h3]:mb-3 [&_h3]:font-semibold [&_h3]:font-sans [&_p]:text-base [&_p]:text-black [&_p]:font-sans dark:[&_p]:text-black dark:[&_h3]:text-blue bg-white dark:bg-white shadow p-4 ring rounded ring-gray">
+            <div className="[&_h3]:text-blue [&_h3]:text-lg [&_h3]:mb-3 [&_h3]:font-semibold [&_h3]:font-sans [&_p]:text-base [&_p]:text-black [&_p]:font-sans dark:[&_p]:text-black dark:[&_h3]:text-blue bg-white dark:bg-white shadow p-4 ring rounded ring-gray dark:ring-blue dark:shadow-white">
               <h3>Benevolent</h3>
               <p>
                 We place emphasis and great concern for others' welfare (i.e.
@@ -117,7 +117,7 @@ function page() {
                 love) to promote cooperative and supportive social relations.
               </p>
             </div>
-            <div className="[&_h3]:text-blue [&_h3]:text-lg [&_h3]:mb-3 [&_h3]:font-semibold [&_h3]:font-sans [&_p]:text-base [&_p]:text-black [&_p]:font-sans dark:[&_p]:text-black dark:[&_h3]:text-blue bg-white dark:bg-white shadow p-4 ring rounded ring-gray">
+            <div className="[&_h3]:text-blue [&_h3]:text-lg [&_h3]:mb-3 [&_h3]:font-semibold [&_h3]:font-sans [&_p]:text-base [&_p]:text-black [&_p]:font-sans dark:[&_p]:text-black dark:[&_h3]:text-blue bg-white dark:bg-white shadow p-4 ring rounded ring-gray dark:ring-blue dark:shadow-white">
               <h3>Intergrity</h3>
               <p>
                 We are honest, impartial and trustworthy at all times with our
@@ -126,14 +126,14 @@ function page() {
                 treatment.
               </p>
             </div>
-            <div className="[&_h3]:text-blue [&_h3]:text-lg [&_h3]:mb-3 [&_h3]:font-semibold [&_h3]:font-sans [&_p]:text-base [&_p]:text-black [&_p]:font-sans dark:[&_p]:text-black dark:[&_h3]:text-blue bg-white dark:bg-white shadow p-4 ring rounded ring-gray">
+            <div className="[&_h3]:text-blue [&_h3]:text-lg [&_h3]:mb-3 [&_h3]:font-semibold [&_h3]:font-sans [&_p]:text-base [&_p]:text-black [&_p]:font-sans dark:[&_p]:text-black dark:[&_h3]:text-blue bg-white dark:bg-white shadow p-4 ring rounded ring-gray dark:ring-blue dark:shadow-white">
               <h3>Transformative</h3>
               <p>
                 We commit to undertaking an overarching cultural and purpose-led
                 transformation within and without NairoBits.
               </p>
             </div>
-            <div className="[&_h3]:text-blue [&_h3]:text-lg [&_h3]:mb-3 [&_h3]:font-semibold [&_h3]:font-sans [&_p]:text-base [&_p]:text-black [&_p]:font-sans dark:[&_p]:text-black dark:[&_h3]:text-blue bg-white dark:bg-white shadow p-4 ring rounded ring-gray">
+            <div className="[&_h3]:text-blue [&_h3]:text-lg [&_h3]:mb-3 [&_h3]:font-semibold [&_h3]:font-sans [&_p]:text-base [&_p]:text-black [&_p]:font-sans dark:[&_p]:text-black dark:[&_h3]:text-blue bg-white dark:bg-white shadow p-4 ring rounded ring-gray dark:ring-blue dark:shadow-white">
               <h3>Solidarity</h3>
               <p>
                 We strive to willingly give ourselves for the good of our
@@ -225,7 +225,7 @@ function page() {
                     href="https://linkedin.com"
                     title="linkend founder link"
                     className="relative inline-block w-8 h-8 self-end"
-                    target='_blank'
+                    target="_blank"
                   >
                     <Image
                       src="/images/flin.png"
@@ -266,7 +266,7 @@ function page() {
                   <Link
                     href="https://linkedin.com"
                     title="linkend founder link"
-                    target='_blank'
+                    target="_blank"
                     className="relative inline-block w-8 h-8 self-end"
                   >
                     <Image
