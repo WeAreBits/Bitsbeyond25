@@ -65,3 +65,14 @@
 .bodyH2{
   @apply font-semibold font-sans text-black dark:text-black text-4xl;
 }
+
+/* Hide Google Translate default UI elements */
+#google_translate_element,
+.goog-te-banner-frame.skiptranslate,
+.goog-logo-link,
+body > .skiptranslate {
+  display: none !important;
+}
+body {
+  top: 0 !important;
+}

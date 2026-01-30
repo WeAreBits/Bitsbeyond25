@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link";
+
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -9,9 +9,24 @@ import {
 import { HiMiniLanguage } from "react-icons/hi2";
 
 const LANGUAGES = [
-  { label: "English", href: "/", code: "en" },
-  { label: "French", href: "/", code: "fr" },
-];
+  { label: "English", code: "en" },
+  { label: "French", code: "fr" },
+  { label: "Arabic", code: "ar" },
+  { label: "Japanese", code: "ja" },
+  { label: "Chinese (Simplified)", code: "zh-CN" },
+  { label: "Chinese (Traditional)", code: "zh-TW" },
+] as const;
+
+function setGoogleTranslateLanguage(code: string) {
+  if (code === "en") {
+    document.cookie =
+      "googtrans=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT";
+  } else {
+    document.cookie = `googtrans=/en/${code}; path=/`;
+  }
+  window.location.reload();
+}
+
 function LanguageSwitcher() {
   return (
     <DropdownMenu>
@@ -33,11 +48,16 @@ function LanguageSwitcher() {
         align="end"
         className="mt-2 border-0 bg-white font-sans rounded-t-none rounded-b-[4px] font-semibold text-black shadow-none"
       >
-        {LANGUAGES.map(({ code, href, label }) => (
-          <DropdownMenuItem key={code} asChild>
-            <Link href={href} className="block w-full">
-              {label}
-            </Link>
+        {LANGUAGES.map(({ code, label }) => (
+          <DropdownMenuItem
+            key={code}
+            className="cursor-pointer"
+            onSelect={(e) => {
+              e.preventDefault();
+              setGoogleTranslateLanguage(code);
+            }}
+          >
+            {label}
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>
